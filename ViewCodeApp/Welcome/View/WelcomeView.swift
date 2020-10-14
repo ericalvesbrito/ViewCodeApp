@@ -20,57 +20,57 @@ class WelcomeView: UIView, CodeView {
     //MARK: Properties
     weak var delegate: WelcomeViewDelegate?
 
-    let scrollView: UIScrollView = {
+    @ViewCodeComponent
+    var scrollView: UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.keyboardDismissMode = .interactive
         return scrollView
     }()
 
-    let contentView: UIView = {
+    @ViewCodeComponent
+    var contentView: UIView = {
         let contentView = UIView(frame: .zero)
-        contentView.translatesAutoresizingMaskIntoConstraints = false
         return contentView
     }()
-    
-    let mainImage: UIImageView = {
+
+    @ViewCodeComponent
+    var mainImage: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.image = #imageLiteral(resourceName: "home")
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
-    
-    let titleLabel: UILabel = {
+
+    @ViewCodeComponent
+    var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.text = Localization.welcome
         label.textAlignment = .center
         label.font = .title
         label.textColor = .title
         label.accessibilityIdentifier = "welcome-title-label"
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    let bodyLabel: UILabel = {
+    @ViewCodeComponent
+    var bodyLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.text = Localization.main
         label.textAlignment = .center
         label.font = .body
         label.textColor = .body
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    let phoneTextField: UITextField = {
+    @ViewCodeComponent
+    var phoneTextField: UITextField = {
         let textField = UITextField(frame: .zero)
         textField.placeholder = Localization.phone
         textField.borderStyle = .roundedRect
         textField.keyboardType = .phonePad
         textField.textAlignment = .center
-        textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
     
