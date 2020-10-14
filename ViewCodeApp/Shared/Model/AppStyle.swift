@@ -16,7 +16,7 @@ extension UIColor {
     
     static let title = UIColor.mainBlack
     static let body = UIColor.mediumGray
-    static let mainButton = UIColor.basePurple
+    static let mainButton = UIColor(named: "MainButton") ?? UIColor.basePurple
     static let secondaryButton = UIColor.white
     static let mainButtonText = UIColor.white
     static let secondaryButtonText = UIColor.mainBlack
