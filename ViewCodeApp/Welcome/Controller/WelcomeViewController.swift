@@ -20,13 +20,13 @@ class WelcomeViewController: UIViewController {
     }
 }
 
-extension WelcomeViewController: WelcomViewDelegate {
+extension WelcomeViewController: WelcomeViewDelegate {
     func loginButtonTapped(withPhone: String) {
-        
+        print("Usuário tocou no botão de Login com o telefone \(withPhone)")
     }
     
     func signUpbuttonTapped() {
-        
+        print("Usuário tocou no botão de SignUp")
     }
     
     func facebookbuttonTapped() {

@@ -15,6 +15,7 @@
 		226D3DAE253664EC00EB8E9B /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DAD253664EC00EB8E9B /* CodeView.swift */; };
 		226D3DB125366ED500EB8E9B /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DB025366ED500EB8E9B /* AppStyle.swift */; };
 		226D3DB425366FBD00EB8E9B /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DB325366FBD00EB8E9B /* UIColor+RGB.swift */; };
+		226D3DB725367D7900EB8E9B /* WelcomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DB625367D7900EB8E9B /* WelcomeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		226D3DAD253664EC00EB8E9B /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		226D3DB025366ED500EB8E9B /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
 		226D3DB325366FBD00EB8E9B /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		226D3DB625367D7900EB8E9B /* WelcomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				226D3D902536604700EB8E9B /* AppDelegate.swift */,
 				226D3DA52536618400EB8E9B /* Welcome */,
 				226D3DAC253664CE00EB8E9B /* Shared */,
+				226D3DB525367D5100EB8E9B /* Components */,
 				226D3D992536604A00EB8E9B /* Assets.xcassets */,
 				226D3D9B2536604A00EB8E9B /* LaunchScreen.storyboard */,
 				226D3D9E2536604A00EB8E9B /* Info.plist */,
@@ -127,6 +130,14 @@
 				226D3DB325366FBD00EB8E9B /* UIColor+RGB.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		226D3DB525367D5100EB8E9B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				226D3DB625367D7900EB8E9B /* WelcomeButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 				226D3DA8253661DD00EB8E9B /* WelcomeView.swift in Sources */,
 				226D3D912536604700EB8E9B /* AppDelegate.swift in Sources */,
 				226D3DAE253664EC00EB8E9B /* CodeView.swift in Sources */,
+				226D3DB725367D7900EB8E9B /* WelcomeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
